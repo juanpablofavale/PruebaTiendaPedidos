@@ -6,16 +6,20 @@
   },
   "routes": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/api/assets/$1"
-    },
-    {
-      "src": "/admin/assets/(.*)",
-      "dest": "/api/admin/assets/$1"
+      "src": "/(.*\\.php)$",
+      "dest": "/api"
     },
     {
       "src": "/admin/(.*\\.php)$",
-      "dest": "/api/admin/$1"
+      "dest": "/api/admin"
+    },
+    {
+        "src": "/admin/includes/(.*\\.php)$",
+        "dest": "/api/admin/includes"
+    },
+    {
+      "src": "/config/(.*\\.php)$",
+      "dest": "/api/config"
     },
     {
       "src": "/(.*\\.php)$",
@@ -23,19 +27,16 @@
     },
     {
       "src": "/(.*\\.css)$",
-      "dest": "/api/$1"
+      "dest": "/api/assets/css"
     },
     {
       "src": "/(.*\\.js)$",
-      "dest": "/api/$1"
+      "dest": "/api/assets/js"
     },
-    {
-      "src": "/(.*\\.html)$",
-      "dest": "/api/$1"
-    },
+
     {
       "src": "/(.*\\.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.svg)$",
-      "dest": "/api/$1"
+      "dest": "/api/assets/img"
     },
     {
       "src": "/(.*)",
