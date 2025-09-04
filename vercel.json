@@ -35,7 +35,7 @@
     },
 
     {
-      "src": "/(.*\\.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.svg)$",
+      "src": "/assets/img/(.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.svg)$",
       "dest": "/api/assets/img"
     },
     {
