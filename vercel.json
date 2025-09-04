@@ -6,36 +6,7 @@
   },
   "routes": [
     {
-      "src": "/(.*\\.php)$",
-      "dest": "/api"
-    },
-    {
-      "src": "/admin/(.*\\.php)$",
-      "dest": "/api/admin"
-    },
-    {
-        "src": "/admin/includes/(.*\\.php)$",
-        "dest": "/api/admin/includes"
-    },
-    {
-      "src": "/config/(.*\\.php)$",
-      "dest": "/api/config"
-    },
-    {
-      "src": "/(.*\\.php)$",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*\\.css)$",
-      "dest": "/api/assets/css"
-    },
-    {
-      "src": "/(.*\\.js)$",
-      "dest": "/api/assets/js"
-    },
-
-    {
-      "src": "/assets/img/(.jpg|.*\\.jpeg|.*\\.png|.*\\.gif|.*\\.svg)$",
+      "src": "/assets/img/(.*)$",
       "dest": "/api/assets/img"
     },
     {
